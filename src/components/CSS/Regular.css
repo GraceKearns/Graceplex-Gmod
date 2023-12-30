@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "determine";
+  src: url("../../fonts/DeterminationMonoWebRegular-Z5oq.ttf")
+    format("truetype");
+  /* You might need to specify different formats for compatibility */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "determinetext";
+  src: url("../../fonts/8bitOperatorPlus-Regular.ttf") format("truetype");
+  /* You might need to specify different formats for compatibility */
+  font-weight: normal;
+  font-style: normal;
+}
+/* Reset default margin and padding for all elements */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color for the HTML and body */
+html,
+body {
+  height: 100%;
+  background-color: black;
+  color: white;
+
+}
+
+section {
+  padding: 1.4rem;
+  min-height: 100vh;
+  flex: 1;
+}
+/* Define styles for the header container */
+.HeaderContainer {
+  background-color: #333;
+  padding: 0.6rem;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #171618 #292929;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #292929;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #171618;
+    border-radius: 10px;
+    border: 3px inset #0a0a0a;
+  }
+/* Style the navigation items */
+.NavItems,
+.NavItems a {
+  font-family: "determine";
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 2rem;
+  text-decoration: none;
+  color: red;
+}
+
+.lightBulb {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.yellowCircle.off {
+    transition: opacity 0.3s ease; /* Add transition for height and opacity */
+  }
+.yellowCircle.on {
+  position: absolute;
+  width: 20rem; /* Adjust the size of the circle as needed */
+  height: 20rem; /* Adjust the size of the circle as needed */
+  background-color: yellow;
+  border-radius: 50%; /* Makes the div a circle by using border-radius */
+  right: -5.3rem;
+  top: -8rem;
+  opacity: 0.5;
+  background: rgb(241, 251, 138);
+  background: radial-gradient(
+    circle,
+    rgba(241, 251, 138, 1) 0%,
+    rgba(98, 121, 9, 0) 49%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+/* Center align the header title */
+.HeaderTitleContainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+.HeaderTitle {
+  font-family: "determine";
+  font-size: 4.5rem;
+  color: yellow;
+  letter-spacing: 0.2rem;
+}
+
+/* Ensure no margin for body */
+body {
+  margin: 0;
+  padding: 0;
+}
+.PageBlock {
+  margin-top: 4rem;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "determine";
+}
+h3 {
+  font-family: "determine";
+  font-size: 3rem;
+}
+p {
+  font-family: "determinetext";
+  font-size: 1.5rem;
+}
+.RequirementsPoint {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.InstallationStep {
+  background-color: #333;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.DropDownArrow {
+  font-size: 2.5rem;
+  cursor: context-menu;
+}
+.DropdownContent {
+  max-height: 0;
+  background-color: #333;
+  overflow: hidden;
+  margin: 0rem;
+  padding: 0rem;
+  opacity: 0;
+  transition: padding 0.3s ease, margin 0.3s ease, max-height 0.3s ease,
+    opacity 0.3s ease; /* Add transition for height and opacity */
+}
+
+.DropdownContent.open {
+  background-color: #333;
+  margin-top: 1rem;
+  padding: 1rem;
+  opacity: 1;
+  max-height: 100%; /* Adjust this value as per your content height */
+}
+.Instructions {
+  font-family: "determinetext";
+  font-size: 1.5rem;
+}
+.Link {
+  text-decoration: none;
+  color: red;
+}
+.footer {
+  padding: 1rem;
+  background-color: #333;
+}

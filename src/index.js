@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './components/CSS/Regular.css'
 import reportWebVitals from './reportWebVitals';
-
+import Header from './components/Header';
+import About from './components/About';
+import Requirements from './components/Requirements';
+import Installation from './components/Installation';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <section> 
+    <About/>
+    <Requirements/>
+    <Installation/>
+    <FAQ/>
+    </section>
+    <Footer/>
   </React.StrictMode>
 );
 
