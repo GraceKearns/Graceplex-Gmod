@@ -117,6 +117,9 @@ body {
 .PageBlock {
   margin-top: 4rem;
 }
+#aboutSection p {
+  text-align: center;
+}
 h2 {
   font-size: 4rem;
   text-align: center;
