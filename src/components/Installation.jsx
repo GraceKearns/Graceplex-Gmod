@@ -75,7 +75,7 @@ const Installation = () => {
          And last but not least the connection information is the following:
          <br></br>
         <br></br>
-          Ip Address:
+          Ip Address: 51.161.215.178:25573
           <br></br>
         <br></br>
         Have fun?
