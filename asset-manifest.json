@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/GracePlex-Gmod/static/css/main.b757c2d7.css",
+    "main.js": "/GracePlex-Gmod/static/js/main.b43d7de0.js",
+    "static/js/787.f4dacfd1.chunk.js": "/GracePlex-Gmod/static/js/787.f4dacfd1.chunk.js",
+    "static/media/head4.jpg": "/GracePlex-Gmod/static/media/head4.a8b8ed4bf9b898be076b.jpg",
+    "static/media/Inter-ExtraLight.ttf": "/GracePlex-Gmod/static/media/Inter-ExtraLight.fbcf1d9ad9d7bac9f6de.ttf",
+    "static/media/Inter-Regular.ttf": "/GracePlex-Gmod/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/head5.jpg": "/GracePlex-Gmod/static/media/head5.54b57c7cd95b79d5d158.jpg",
+    "static/media/coolvetica rg.ttf": "/GracePlex-Gmod/static/media/coolvetica rg.857acc35e07cc59dfcb4.ttf",
+    "static/media/screen3.jpg": "/GracePlex-Gmod/static/media/screen3.83e58f7827a609763f56.jpg",
+    "static/media/screen2.jpg": "/GracePlex-Gmod/static/media/screen2.97e65bf355d0b4032048.jpg",
+    "static/media/screen1.jpg": "/GracePlex-Gmod/static/media/screen1.8a7fbf7e5f8b57a152de.jpg",
+    "static/media/gmodcontent.png": "/GracePlex-Gmod/static/media/gmodcontent.9f28569ef5fe1ace3704.png",
+    "index.html": "/GracePlex-Gmod/index.html",
+    "main.b757c2d7.css.map": "/GracePlex-Gmod/static/css/main.b757c2d7.css.map",
+    "main.b43d7de0.js.map": "/GracePlex-Gmod/static/js/main.b43d7de0.js.map",
+    "787.f4dacfd1.chunk.js.map": "/GracePlex-Gmod/static/js/787.f4dacfd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b757c2d7.css",
+    "static/js/main.b43d7de0.js"
+  ]
+}
