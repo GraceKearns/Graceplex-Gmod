@@ -24,6 +24,6 @@ const About = ({mode, handleClick}) => {
       </div>
     )}
     </div>
-  );
+  ); 
 };
 export default About;
