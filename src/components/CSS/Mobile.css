@@ -1,10 +1,37 @@
-
-
 @media screen and (max-width: 850px) {
   .NavItems {
     display: none;
   }
+  .contentPack {
+    padding:2rem;
+    text-align: center;
 
+  }
+
+  .InstructionBlocks {
+    display:flex;
+    flex-direction: column;
+    margin:4rem;
+    color:black
+  }
+  .slideshow-container {
+    text-align: center;
+    overflow: hidden;
+    width:80vw;
+    margin:0 auto;
+    border-radius: 1rem;
+  }
+  .InstructionBlocks p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .Instruction {
+    text-align: center;
+    flex: 1;
+  }
+  .Instruction img {
+    height:5rem;
+  }
   .MenuIcon {
     display: block;
     width: 30px;
@@ -16,29 +43,37 @@
   .menu-bar {
     text-align: center;
   }
-  .MobileNavItems, .MobileNavItems a {
+  .MobileNavItems,
+  .MobileNavItems a {
     display: flex;
     text-align: center;
     flex-direction: column;
-    font-family: "determine";
+    font-family: "coolvetica";
     justify-content: space-around;
     list-style: none;
     font-size: 2rem;
     text-decoration: none;
-    color: red;
+    color: white;
   }
   @font-face {
-    font-family: "determine";
-    src: url("../../fonts/DeterminationMonoWebRegular-Z5oq.ttf")
-      format("truetype");
+    font-family: "coolvetica";
+    src: url("../../fonts/coolvetica rg.ttf") format("truetype");
+    /* You might need to specify different formats for compatibility */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("../../fonts/Inter-Regular.ttf") format("truetype");
     /* You might need to specify different formats for compatibility */
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: "determinetext";
-    src: url("../../fonts/8bitOperatorPlus-Regular.ttf") format("truetype");
-    font-weight: normal;
+    font-family: "inter-light";
+    src: url("../../fonts/Inter-ExtraLight.ttf") format("truetype");
+    /* You might need to specify different formats for compatibility */
     font-style: normal;
   }
   * {
@@ -59,8 +94,10 @@
   }
   /* Define styles for the header container */
   .HeaderContainer {
-    background-color: #333;
-    padding: 0.4rem;
+    background-image: url("../../img/head4.jpg");
+    background-position-y: -16rem;
+    background-size: cover;
+    padding: 0.6rem;
   }
 
   /* ===== Scrollbar CSS ===== */
@@ -86,40 +123,23 @@
   }
   /* Style the navigation items */
 
-  .lightBulb {
-    cursor: -webkit-grab;
-    cursor: grab;
-  }
-  .yellowCircle.off {
-    transition: opacity 0.3s ease; /* Add transition for height and opacity */
-  }
-  .yellowCircle.on {
-    position: absolute;
-    width: 20rem; /* Adjust the size of the circle as needed */
-    height: 20rem; /* Adjust the size of the circle as needed */
-    background-color: yellow;
-    border-radius: 50%; /* Makes the div a circle by using border-radius */
-    right: -5.3rem;
-    top: -8rem;
-    opacity: 0.5;
-    background: rgb(241, 251, 138);
-    background: radial-gradient(
-      circle,
-      rgba(241, 251, 138, 1) 0%,
-      rgba(98, 121, 9, 0) 49%,
-      rgba(0, 212, 255, 0) 100%
-    );
-  }
   /* Center align the header title */
   .HeaderTitleContainer {
     text-align: center;
     margin-top: 2rem;
   }
   .HeaderTitle {
-    font-family: "determine";
-    font-size: 3.5rem;
-    color: yellow;
+    font-family: "coolvetica";
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 900;
     letter-spacing: 0.2rem;
+  }
+  .GTitle {
+    background-color: #0781eb;
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+    margin-right: 0.2rem;
   }
 
   /* Ensure no margin for body */
@@ -134,16 +154,18 @@
     text-align: center;
   }
   h2 {
-    font-size: 4rem;
+    color: black;
+    font-size: 3rem;
     text-align: center;
-    font-family: "determine";
+    font-family: "inter";
   }
   h3 {
-    font-family: "determine";
+    color: black;
+    font-family: "inter";
     font-size: 3rem;
   }
   p {
-    font-family: "determinetext";
+    font-family: "inter-light";
     font-size: 1.5rem;
   }
   .RequirementsPoint {
@@ -171,7 +193,7 @@
     transition: padding 0.3s ease, margin 0.3s ease, max-height 0.3s ease,
       opacity 0.3s ease; /* Add transition for height and opacity */
   }
-
+  
   .DropdownContent.open {
     background-color: #333;
     margin-top: 1rem;
@@ -179,6 +201,7 @@
     opacity: 1;
     max-height: 100%; /* Adjust this value as per your content height */
   }
+  
   .Instructions {
     font-family: "determinetext";
     font-size: 1.5rem;
@@ -192,28 +215,42 @@
     background-color: #333;
   }
 }
-@media screen and (max-width:670px) {
-    .HeaderTitle {
-        font-family: "determine";
-        font-size: 2.7rem;
-        color: yellow;
-        letter-spacing: 0.2rem;
-      }
-      h2 {
-        font-size: 2.5rem;
-        text-align: center;
-        font-family: "determine";
-      }
-      h3 { 
-        font-family: "determine";
-        font-size: 2rem;
-      }
+@media screen and (max-width: 670px) {
+  .HeaderTitle {
+    font-family: "coolvetica";
+    font-size: 2.7rem;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+  }
+  h2 {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "inter";
+  }
+  h3 {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "inter";
+  }
 }
-@media screen and (max-width:520px) {
-    .HeaderTitle {
-        font-family: "determine";
-        font-size: 2.0rem;
-        color: yellow;
-        letter-spacing: 0.2rem;
-      }
+@media screen and( max-width: 520px) {
+  .HeaderTitle {
+    font-family: "coolvetica";
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: "coolvetica";
+  }
+  h3 {
+    font-family: "coolvetica";
+    font-size: 1.4rem;
+  }
 }

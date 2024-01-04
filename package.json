@@ -1,6 +1,6 @@
 {
-  "homepage": "https://GraceKearns.github.io/GracePlex-Minecraft",
-  "name": "minecraft",
+  "homepage": "https://GraceKearns.github.io/GracePlex-Gmod",
+  "name": "Gmod",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

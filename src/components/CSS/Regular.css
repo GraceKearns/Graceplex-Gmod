@@ -1,18 +1,28 @@
 @font-face {
-  font-family: "determine";
-  src: url("../../fonts/DeterminationMonoWebRegular-Z5oq.ttf")
+  font-family: "coolvetica";
+  src: url("../../fonts/coolvetica rg.ttf")
+    format("truetype");
+  /* You might need to specify different formats for compatibility */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("../../fonts/Inter-Regular.ttf")
     format("truetype");
   /* You might need to specify different formats for compatibility */
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "determinetext";
-  src: url("../../fonts/8bitOperatorPlus-Regular.ttf") format("truetype");
+  font-family: "inter-light";
+  src: url("../../fonts/Inter-ExtraLight.ttf")
+    format("truetype");
   /* You might need to specify different formats for compatibility */
-  font-weight: normal;
   font-style: normal;
 }
+
 /* Reset default margin and padding for all elements */
 
 * {
@@ -24,8 +34,8 @@
 html,
 body {
   height: 100%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 
 }
 
@@ -36,77 +46,62 @@ section {
 }
 /* Define styles for the header container */
 .HeaderContainer {
-  background-color: #333;
+  background-image: url('../../img/head4.jpg');
+  background-position-y: -16rem;
+  background-size:cover;
   padding: 0.6rem;
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #171618 #292929;
+    scrollbar-color: #d9d9d9 #a3a3a3;
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 16px;
+    width: 24px;
   }
 
   *::-webkit-scrollbar-track {
-    background: #292929;
+    background: #a3a3a3;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #171618;
-    border-radius: 10px;
-    border: 3px inset #0a0a0a;
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    border: 3px solid #5c5c5c;
   }
-/* Style the navigation items */
 .NavItems,
 .NavItems a {
-  font-family: "determine";
+  font-family: "coolvetica";
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
   list-style: none;
   font-size: 2rem;
   text-decoration: none;
-  color: red;
+  color: white;
 }
 
-.lightBulb {
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-.yellowCircle.off {
-    transition: opacity 0.3s ease; /* Add transition for height and opacity */
-  }
-.yellowCircle.on {
-  position: absolute;
-  width: 20rem; /* Adjust the size of the circle as needed */
-  height: 20rem; /* Adjust the size of the circle as needed */
-  background-color: yellow;
-  border-radius: 50%; /* Makes the div a circle by using border-radius */
-  right: -5.3rem;
-  top: -8rem;
-  opacity: 0.5;
-  background: rgb(241, 251, 138);
-  background: radial-gradient(
-    circle,
-    rgba(241, 251, 138, 1) 0%,
-    rgba(98, 121, 9, 0) 49%,
-    rgba(0, 212, 255, 0) 100%
-  );
-}
+
 /* Center align the header title */
 .HeaderTitleContainer {
   text-align: center;
   margin-top: 2rem;
 }
 .HeaderTitle {
-  font-family: "determine";
+  font-family: "coolvetica";
   font-size: 4.5rem;
-  color: yellow;
+  color: white;
+  font-weight: 900;
   letter-spacing: 0.2rem;
+}
+.GTitle {
+  background-color: #0781eb;
+  padding:0.4rem;
+  border-radius: 0.6rem;
+  margin-right: 0.2rem;
 }
 
 /* Ensure no margin for body */
@@ -114,67 +109,194 @@ body {
   margin: 0;
   padding: 0;
 }
-.PageBlock {
-  margin-top: 4rem;
+#aboutSection {
+  padding: 6rem;
+  border-bottom: white 0.2rem solid;
+  border-top: white 0.2rem solid;
+  background: #0082ff ;
+  color:white
 }
 #aboutSection p {
-  text-align: center;
+  text-align: left;
+}
+#aboutSection span {
+  color:red
 }
 h2 {
   font-size: 4rem;
   text-align: center;
-  font-family: "determine";
+  font-family: "inter";
 }
 h3 {
-  font-family: "determine";
+  font-family: "inter";
   font-size: 3rem;
 }
 p {
-  font-family: "determinetext";
+  font-family: "inter-light";
   font-size: 1.5rem;
 }
-.RequirementsPoint {
-  font-weight: 800;
-  font-size: 2rem;
-}
-.InstallationStep {
-  background-color: #333;
-  margin-top: 1rem;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-}
-.DropDownArrow {
-  font-size: 2.5rem;
-  cursor: context-menu;
-}
-.DropdownContent {
-  max-height: 0;
-  background-color: #333;
+.slideshow-container {
+  text-align: center;
   overflow: hidden;
-  margin: 0rem;
-  padding: 0rem;
-  opacity: 0;
-  transition: padding 0.3s ease, margin 0.3s ease, max-height 0.3s ease,
-    opacity 0.3s ease; /* Add transition for height and opacity */
+  width:80vw;
+  margin:0 auto;
+  border-radius: 1rem;
 }
 
-.DropdownContent.open {
-  background-color: #333;
-  margin-top: 1rem;
-  padding: 1rem;
-  opacity: 1;
-  max-height: 100%; /* Adjust this value as per your content height */
+.slides {
+  display: flex;
+  width:240vw;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out; /* Adjust the transition duration */
 }
-.Instructions {
-  font-family: "determinetext";
-  font-size: 1.5rem;
+
+.slides img {
+  flex:1;
+  height: 30rem; 
+  width: 80vw;
+
 }
-.Link {
-  text-decoration: none;
-  color: red;
+.InstructionBlocks {
+  display:flex;
+  margin:4rem;
+}
+
+.InstructionBlocks p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.Instruction {
+  text-align: center;
+  flex: 1;
+}
+.Instruction img {
+  height:5rem;
+}
+#DownloadSection {
+  background-color:#0082ff  ;
+  color:white;
+  padding:8rem;
+}
+#DownloadSection p {
+  text-align: center;
+}
+.DownloadContainer {
+  text-align: center;
+}
+  
+#InfoDump {
+
+  background:white
+}
+#InfoDump p {
+  text-align: center;
+}
+#InfoDump h2 {
+  padding:2rem;
+}
+.contentPack {
+  padding:2rem;
+  text-align: center;
+
+}
+.contentPack img {
+  width:80vw;
+
 }
 .footer {
   padding: 1rem;
+  text-align: center;
+  background-color:#0082ff  ;
+}
+.alien {
+  background-color: black;
+  color:white;
+}
+.alienKill {
+  color:red;
+  animation: vibrate 0.1s infinite;
+  font-weight: 900;
+  display:inline-block
+}
+#aboutSectionA {
+  padding: 6rem;
+  border-bottom: rgb(70, 1, 1) 0.2rem solid;
+  border-top: rgb(70, 1, 1) 0.2rem solid;
+  background: rgb(70, 1, 1);
+  color:white
+}
+
+#HowtoSection {
+  padding:4rem;
+  background-color: white;
+}
+#HowtoSectionA {
+  padding:4rem;
+  background-color: black;
+}
+
+.InstructionBlocksA {
+  display:flex;
+  color:white;
+  margin:4rem;
+}
+#DownloadSectionA {
+  background-color:rgb(70, 1, 1)  ;
+  color:white;
+  padding:8rem;
+}
+#DownloadSectionA p {
+  text-align: center;
+}
+#InfoDumpA {
+  background:black;
+  color:white
+}
+
+#InfoDumpA p {
+  text-align: center;
+  padding:2rem;
+}
+#InfoDumpA h2 {
+  padding:2rem;
+}
+.footerA {
+  text-align: center;
   background-color: #333;
+  padding:2rem;
+  color:white;
+}
+
+.HeaderContainerA {
+  background-image: url('../../img/head5.jpg');
+  background-position-y: -24rem;
+  background-size:cover;
+  padding: 0.6rem;
+}
+.GTitleA {
+  background-color: red;
+  padding:0.4rem;
+  border-radius: 0.6rem;
+  margin-right: 0.2rem;
+}
+.siteTf {
+  cursor: pointer;
+  display:inline-block;
+  animation: shake 4s infinite ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-0.3125rem) rotate(-2deg); } /* 5px converted to rem */
+  50% { transform: translateX(0.3125rem) rotate(2deg); } /* 5px converted to rem */
+  75% { transform: translateX(-0.3125rem) rotate(-2deg); } /* 5px converted to rem */
+  100% { transform: translateX(0); }
+}
+
+@keyframes vibrate {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-0.4rem); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(0.4rem); }
+  100% { transform: translateY(0); }
 }
