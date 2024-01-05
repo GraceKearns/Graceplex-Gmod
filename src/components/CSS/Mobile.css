@@ -7,19 +7,47 @@
     text-align: center;
 
   }
-
+  .DownloadContainer img {
+    width:40vw;
+  }
   .InstructionBlocks {
     display:flex;
     flex-direction: column;
     margin:4rem;
     color:black
   }
+  #DownloadSectionA {
+    background-color:rgb(70, 1, 1)  ;
+    color:white;
+    padding:8rem;
+  }
+  .InstructionBlocksA {
+    flex-direction: column;
+    display:flex;
+    
+    margin:4rem;
+    color:white
+  }
   .slideshow-container {
     text-align: center;
     overflow: hidden;
-    width:80vw;
+    width:60vw;
     margin:0 auto;
     border-radius: 1rem;
+  }
+  
+  .slides {
+    display: flex;
+    width:240vw;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out; /* Adjust the transition duration */
+  }
+  
+  .slides img {
+    flex:1;
+    height: 30rem; 
+    width: 80vw;
+  
   }
   .InstructionBlocks p {
     text-align: center;
@@ -150,19 +178,25 @@
   .PageBlock {
     margin-top: 4rem;
   }
-  #aboutSection p {
-    text-align: center;
-  }
+
+
+
   h2 {
-    color: black;
+    color: white;
     font-size: 3rem;
     text-align: center;
     font-family: "inter";
   }
   h3 {
-    color: black;
+    color: white;
     font-family: "inter";
     font-size: 3rem;
+  }
+  #InfoDump {
+    color:black;
+  }
+  #InfoDump h2 {
+    color:black;
   }
   p {
     font-family: "inter-light";
@@ -223,14 +257,27 @@
     font-weight: 900;
     letter-spacing: 0.2rem;
   }
+  
+  #aboutSectionA {
+    padding: 6rem;
+    border-bottom: rgb(70, 1, 1) 0.2rem solid;
+    border-top: rgb(70, 1, 1) 0.2rem solid;
+    background: rgb(70, 1, 1);
+    color:white
+  }
+  #DownloadSectionA {
+    background-color:rgb(70, 1, 1)  ;
+    color:white;
+    padding:8rem;
+  }
   h2 {
-    color: black;
+    color: white;
     font-size: 2rem;
     text-align: center;
     font-family: "inter";
   }
   h3 {
-    color: black;
+    color: white;
     font-size: 2rem;
     text-align: center;
     font-family: "inter";
@@ -239,18 +286,42 @@
 @media screen and( max-width: 520px) {
   .HeaderTitle {
     font-family: "coolvetica";
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     font-weight: 900;
     letter-spacing: 0.2rem;
   }
+  
   h2 {
     font-size: 1.4rem;
     text-align: center;
+    color: black;
     font-family: "coolvetica";
   }
   h3 {
     font-family: "coolvetica";
+    color: black;
     font-size: 1.4rem;
+  }
+  .slideshow-container {
+    text-align: center;
+    overflow: hidden;
+    width:40vw;
+    border-radius: 1rem;
+    
+  }
+  
+  .slides {
+    display: flex;
+    width:120vw;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out; /* Adjust the transition duration */
+  }
+  
+  .slides img {
+    flex:1;
+    height: 30rem; 
+    width: 40vw;
+    
   }
 }

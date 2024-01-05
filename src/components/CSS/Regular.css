@@ -182,6 +182,7 @@ p {
 }
 .DownloadContainer {
   text-align: center;
+  
 }
   
 #InfoDump {
@@ -197,11 +198,9 @@ p {
 .contentPack {
   padding:2rem;
   text-align: center;
-
 }
 .contentPack img {
   width:80vw;
-
 }
 .footer {
   padding: 1rem;
