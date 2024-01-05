@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import './CSS/Regular.css'
-import './CSS/Mobile.css'
+import React from "react";
+import './CSS/Regular.css';
+import './CSS/Mobile.css';
 const About = ({mode, handleClick}) => {
   return (
     <div>
