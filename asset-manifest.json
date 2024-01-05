@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Graceplex-Gmod/static/css/main.e27656f8.css",
+    "main.css": "/Graceplex-Gmod/static/css/main.2acd6789.css",
     "main.js": "/Graceplex-Gmod/static/js/main.a4f7e8fa.js",
     "static/js/787.f4dacfd1.chunk.js": "/Graceplex-Gmod/static/js/787.f4dacfd1.chunk.js",
     "static/media/head4.jpg": "/Graceplex-Gmod/static/media/head4.a8b8ed4bf9b898be076b.jpg",
@@ -13,12 +13,12 @@
     "static/media/screen1.jpg": "/Graceplex-Gmod/static/media/screen1.8a7fbf7e5f8b57a152de.jpg",
     "static/media/gmodcontent.png": "/Graceplex-Gmod/static/media/gmodcontent.9f28569ef5fe1ace3704.png",
     "index.html": "/Graceplex-Gmod/index.html",
-    "main.e27656f8.css.map": "/Graceplex-Gmod/static/css/main.e27656f8.css.map",
+    "main.2acd6789.css.map": "/Graceplex-Gmod/static/css/main.2acd6789.css.map",
     "main.a4f7e8fa.js.map": "/Graceplex-Gmod/static/js/main.a4f7e8fa.js.map",
     "787.f4dacfd1.chunk.js.map": "/Graceplex-Gmod/static/js/787.f4dacfd1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e27656f8.css",
+    "static/css/main.2acd6789.css",
     "static/js/main.a4f7e8fa.js"
   ]
 }
